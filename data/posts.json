@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "title": "First survey",
+        "question": "Are you ok?",
+        "note": 5
+    },
+    {
+        "id": 2,
+        "title": "Second survey",
+        "question": "Are you sure about that?",
+        "note": 3
+    }
+]

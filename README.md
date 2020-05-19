@@ -1,5 +1,8 @@
 # Software Quality Assurance
 
+## How to run the project
+-> $ npm run dev
+
 ***
 
 # Subject
