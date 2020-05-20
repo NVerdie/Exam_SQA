@@ -21,6 +21,42 @@ function mustBeInArray(array, id) {
     })
 }
 
+function findSurveysWithTitle(array, title) {
+    return new Promise((resolve, reject) => {
+        const row = array.filter(r => r.title == title)
+        if (!row) {
+            reject({
+                message: "Title is no good",
+                status: 404
+            })
+        }
+        resolve(row)
+    })
+}
+
+function makeAverageSurveysWithTitle(array, title) {
+    return new Promise((resolve, reject) => {
+        const row = array.filter(r => r.title == title)
+        if (!row) {
+            reject({
+                message: "Title is no good",
+                status: 404
+            })
+        }
+        let len = row.length
+        let average = 0
+        var i = 0
+
+        while(i < len) {
+            average = average + row[i].note
+            i++
+        }
+
+        average = average / len
+        resolve(average)
+    })
+}
+
 function writeJSONFile(filename, content) {
     fs.writeFileSync(filename, JSON.stringify(content), 'utf8', (err) => {
         if (err) {
@@ -32,5 +68,7 @@ function writeJSONFile(filename, content) {
 module.exports = {
     getNewId,
     mustBeInArray,
+    findSurveysWithTitle,
+    makeAverageSurveysWithTitle,
     writeJSONFile
 }
