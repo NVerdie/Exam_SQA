@@ -3,6 +3,37 @@
 ## How to run the project
 -> $ npm run dev
 
+Get all questions :
+> curl -i -X GET http://localhost:1337/api/question
+
+Post new question :
+> curl -i -X POST -H "Content-Type: application/json" -d '{ "title": {int} "question": {string}, "note": {int} }' http://localhost:1337/api/question
+
+Get specific question by ID :
+> curl -i -X GET http://localhost:1337/api/question/{id}
+
+Update a specific question :
+> curl -i -X PUT -H "Content-Type: application/json" -d '{ "title": 1, "question": "My new question", "note": 5 }' http://localhost:1337/api/question
+
+Delete a specific question :
+> curl -i -X DELETE http://localhost:1337/api/question/{id}
+
+Get all surveys :
+> curl -i -X GET http://localhost:1337/api/surveys
+
+Get specific survey:
+> curl -i -X GET http://localhost:1337/api/surveys/{numberofthetitle}
+
+Get specific survey with average:
+> curl -i -X GET http://localhost:1337/api/surveys/average/{numberofthetitle}
+
+## How to run testing
+-> $ npm test
+
+Test run by Jest and Supertest
+
+Some trouble to test my project -> 0% coverage
+
 ***
 
 # Subject
