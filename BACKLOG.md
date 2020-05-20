@@ -7,4 +7,4 @@
 | Treatment routes | 2      |    4 | Done
 | Errors gestion | 3      |    3 | Done
 | Testing | 3      |    5 | Done
-| final push | 4      |    1 | TODO
+| final push | 4      |    1 | Done
