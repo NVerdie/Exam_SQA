@@ -27,7 +27,12 @@ Get specific survey:
 Get specific survey with average:
 > curl -i -X GET http://localhost:1337/api/surveys/average/{numberofthetitle}
 
+## How to run testing
+-> $ npm test
 
+Test run by Jest and Supertest
+
+Some trouble to test my project -> 0% coverage
 
 ***
 
