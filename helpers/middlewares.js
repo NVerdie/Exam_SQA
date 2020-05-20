@@ -14,7 +14,9 @@ function checkFieldsPost(req, res, next) {
         res.status(400).json({ message: 'fields are not good' })
     }
 }
+
+
 module.exports = {
     mustBeInteger,
-    checkFieldsPost
+    checkFieldsPost,
 }

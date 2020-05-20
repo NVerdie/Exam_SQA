@@ -1,14 +1,1 @@
-[
-    {
-        "id": 1,
-        "title": "First survey",
-        "question": "Are you ok?",
-        "note": 5
-    },
-    {
-        "id": 2,
-        "title": "Second survey",
-        "question": "Are you sure about that?",
-        "note": 3
-    }
-]
+[{"id":1,"title":1,"question":"Are you ok","note":4},{"id":2,"title":1,"question":"Are you ok, sure ?","note":8},{"id":3,"title":10,"question":"My new question","note":4}]
